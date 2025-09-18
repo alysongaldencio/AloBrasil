@@ -13,13 +13,13 @@ src/components/sections/Hero.tsx
 
 1. **Coloque sua imagem na pasta:**
    ```
-   src/assets/images/sua-imagem.jpg
+   public/images/sua-imagem.jpg
    ```
 
 2. **Atualize o componente Hero:**
    ```tsx
    <img 
-     src="/src/assets/images/sua-imagem.jpg" 
+     src="/images/sua-imagem.jpg" 
      alt="Descrição da imagem"
      className="w-96 h-96 object-cover rounded-2xl border-4 border-gold-400 shadow-2xl"
    />

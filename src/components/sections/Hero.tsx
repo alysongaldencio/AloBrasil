@@ -1,5 +1,3 @@
-import React from 'react';
-import { Button } from '@/components';
 
 const Hero = () => {
   return (
@@ -20,13 +18,16 @@ const Hero = () => {
           <div className="relative">
             {/* Imagem stand_page1.png */}
                 <img
-                  src="/src/assets/images/stand_page1.png"
+                  src="/images/stand_page1.png"
                   alt="Alô Brasil - Assistência 24 horas e Monitoramento"
                   className="w-[90%] mx-auto object-fill rounded-2xl border-4 border-gold-400 shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-105"
               onError={(e) => {
                 // Fallback se a imagem não carregar
                 e.currentTarget.style.display = 'none';
-                e.currentTarget.nextElementSibling.style.display = 'flex';
+                const fallback = e.currentTarget.nextElementSibling as HTMLElement;
+                if (fallback) {
+                  fallback.style.display = 'flex';
+                }
               }}
             />
             

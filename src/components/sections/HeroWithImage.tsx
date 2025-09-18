@@ -28,7 +28,7 @@ const HeroWithImage = () => {
             <div className="relative">
               {/* OPÇÃO 1: Imagem local */}
               <img 
-                src="/src/assets/images/hero-image.jpg" 
+                src="/images/hero-image.jpg" 
                 alt="Comunidade brasileira conectada"
                 className="w-96 h-96 object-cover rounded-2xl border-4 border-gold-400 shadow-2xl"
                 onError={(e) => {

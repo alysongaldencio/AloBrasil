@@ -9,7 +9,7 @@ const Services = () => {
           <div className="relative">
             {/* Imagem servicos.jpg */}
             <img
-              src="/src/assets/images/servicos.jpg"
+              src="/images/servicos.jpg"
               alt="Alô Brasil - Nossos Serviços"
               className="w-[90%] mx-auto object-fill rounded-2xl border-4 border-gold-400 shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-105"
               onError={(e) => {

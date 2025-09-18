@@ -1,4 +1,3 @@
-import React from 'react';
 import { NAV_ITEMS } from '@/constants';
 
 const Header = () => {
@@ -9,7 +8,7 @@ const Header = () => {
           <div className="flex items-center space-x-2">
             <h1 className="text-3xl font-bold text-white">AloBrasil</h1>
             <img 
-              src="/src/assets/images/Logo.png" 
+              src="/images/Logo.png" 
               alt="AloBrasil Logo" 
               className="w-[100px] h-[100px] object-contain"
             />
