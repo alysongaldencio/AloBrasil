@@ -1,31 +1,40 @@
-import React from 'react';
-import { BENEFITS } from '@/constants';
-
 const Benefits = () => {
   return (
     <section id="benefits" className="py-20 pt-32" style={{backgroundColor: '#041437'}}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            Benefícios
-          </h2>
-          <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            Descubra os benefícios de fazer parte da nossa comunidade
-          </p>
-        </div>
-        <div className="max-w-3xl mx-auto">
-          <ul className="space-y-4">
-            {BENEFITS.map((benefit, index) => (
-              <li key={index} className="flex items-center">
-                <div className="flex-shrink-0">
-                  <div className="w-8 h-8 bg-gold-400 rounded-full flex items-center justify-center shadow-lg">
-                    <span className="text-lg font-bold" style={{color: '#041437'}}>✓</span>
-                  </div>
-                </div>
-                <p className="ml-4 text-lg text-white font-medium">{benefit}</p>
-              </li>
-            ))}
-          </ul>
+        {/* Imagem preenchendo toda a largura */}
+        <div className="w-full">
+          <div className="relative">
+            {/* Imagem diferenciais.jpg */}
+            <img
+              src="/images/diferenciais.jpg"
+              alt="Alô Brasil - Nossos Diferenciais"
+              className="w-[90%] mx-auto object-fill rounded-2xl border-4 border-gold-400 shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-105"
+              onError={(e) => {
+                // Fallback se a imagem não carregar
+                e.currentTarget.style.display = 'none';
+                const fallback = e.currentTarget.nextElementSibling as HTMLElement;
+                if (fallback) {
+                  fallback.style.display = 'flex';
+                }
+              }}
+            />
+            
+            {/* Fallback caso a imagem não carregue */}
+            <div className="w-full h-[800px] rounded-2xl border-4 border-gold-400 shadow-2xl flex items-center justify-center hidden" style={{backgroundColor: '#041437'}}>
+              <div className="text-center">
+                <div className="text-8xl mb-4">⭐</div>
+                <p className="text-gold-400 font-semibold text-lg">
+                  Imagem não encontrada
+                </p>
+              </div>
+            </div>
+            
+            {/* Elementos decorativos */}
+            <div className="absolute -top-4 -right-4 w-8 h-8 bg-gold-400 rounded-full animate-pulse"></div>
+            <div className="absolute -bottom-4 -left-4 w-6 h-6 bg-gold-300 rounded-full animate-bounce"></div>
+            <div className="absolute top-4 left-4 w-4 h-4 bg-gold-300 rounded-full animate-pulse"></div>
+          </div>
         </div>
       </div>
     </section>

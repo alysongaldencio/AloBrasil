@@ -6,7 +6,7 @@ const Hero = () => {
         {/* Conteúdo de texto acima da imagem */}
         <div className="text-center mb-4 pt-20">
           <h1 className="text-4xl md:text-5xl font-bold mb-8">
-            Bem-vindo ao AloBrasil
+          À ALÔ BRASIL
           </h1>
               <p className="text-lg md:text-xl mb-10 max-w-xl mx-auto mt-4">
                 ASSISTÊNCIA 24 HORAS E MONITORAMENTO

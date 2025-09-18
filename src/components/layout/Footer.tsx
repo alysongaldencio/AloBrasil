@@ -16,7 +16,7 @@ const Footer = () => {
             <h4 className="text-md font-semibold mb-4">Links Rápidos</h4>
             <ul className="space-y-2">
               <li><a href="#services" className="text-gray-400 hover:text-white">Serviços</a></li>
-              <li><a href="#benefits" className="text-gray-400 hover:text-white">Benefícios</a></li>
+              <li><a href="#benefits" className="text-gray-400 hover:text-white">Nossos Diferenciais</a></li>
               <li><a href="#contact" className="text-gray-400 hover:text-white">Contato</a></li>
             </ul>
           </div>

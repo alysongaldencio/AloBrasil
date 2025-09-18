@@ -90,7 +90,7 @@ npm run dev
 ### Seções
 - `Hero` - Seção principal da página inicial
 - `Services` - Seção de serviços oferecidos
-- `Benefits` - Seção de benefícios
+- `Benefits` - Seção de nossos diferenciais
 
 ### Formulários
 - `Contact` - Formulário de contato com validação
