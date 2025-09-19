@@ -2,6 +2,7 @@
 export const NAV_ITEMS = [
   { label: 'Início', href: '/' },
   { label: 'Serviços', href: '#services' },
+  { label: 'Cobertura', href: '#coverage' },
   { label: 'Nossos Diferenciais', href: '#benefits' },
   { label: 'Contato', href: '#contact' },
 ] as const;
