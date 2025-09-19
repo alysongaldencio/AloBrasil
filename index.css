@@ -133,4 +133,14 @@ All colors MUST be HSL.
   body {
     @apply bg-background text-foreground;
   }
+
+  /* Scroll padding para compensar header fixo */
+  html {
+    scroll-padding-top: 40px; /* Ainda menos para subir um pouquinho mais */
+  }
+  
+  /* Scroll suave para navegação */
+  html {
+    scroll-behavior: smooth;
+  }
 }

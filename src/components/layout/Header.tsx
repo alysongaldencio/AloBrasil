@@ -1,6 +1,19 @@
 import { NAV_ITEMS } from '@/constants';
+import { useScrollToSection } from '@/hooks';
 
 const Header = () => {
+  const { scrollToSection } = useScrollToSection();
+
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault();
+    if (href.startsWith('#')) {
+      const sectionId = href.substring(1);
+      scrollToSection(sectionId);
+    } else {
+      window.location.href = href;
+    }
+  };
+
   return (
     <header className="shadow-lg fixed top-0 left-0 right-0 z-50" style={{backgroundColor: '#041437'}}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -35,7 +48,8 @@ const Header = () => {
               <a
                 key={item.href}
                 href={item.href}
-                className="text-gray-300 hover:text-white transition-colors"
+                onClick={(e) => handleNavClick(e, item.href)}
+                className="text-gray-300 hover:text-white transition-colors cursor-pointer"
               >
                 {item.label}
               </a>
