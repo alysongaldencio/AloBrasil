@@ -1,6 +1,6 @@
 # AloBrasil
 
-Uma plataforma completa para conectar brasileiros ao redor do mundo através de uma comunidade ativa e acolhedora.
+Website
 
 ## 🏗️ Estrutura do Projeto
 
