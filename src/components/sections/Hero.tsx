@@ -1,10 +1,10 @@
 
 const Hero = () => {
   return (
-    <section className="text-white" style={{background: 'linear-gradient(to right, #041437, #041437)'}}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+    <section className="text-white py-20" style={{background: 'linear-gradient(to right, #041437, #041437)'}}>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Conteúdo de texto acima da imagem */}
-        <div className="text-center mb-4 pt-20">
+        <div className="text-center mb-4">
           <h1 className="text-4xl md:text-5xl font-bold mb-8">
           Bem Vindo À ALÔ BRASIL
           </h1>

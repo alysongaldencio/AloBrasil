@@ -4,6 +4,16 @@ const Services = () => {
   return (
     <section id="services" className="py-20" style={{backgroundColor: '#041437'}}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Título da seção */}
+        <div className="text-center mb-12">
+          <h2 className="text-4xl font-bold text-white mb-4">
+            Nossos Serviços
+          </h2>
+          <p className="text-gold-400 text-lg">
+            Assistência completa para você e sua família
+          </p>
+        </div>
+
         {/* Imagem preenchendo toda a largura */}
         <div className="w-full">
           <div className="relative">

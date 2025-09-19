@@ -32,7 +32,7 @@ const Cobertura = () => {
             Nossa Cobertura
           </h2>
           <p className="text-gold-400 text-lg">
-            Atendemos em todo o território nacional
+            Cobertura em todo Brasil
           </p>
         </div>
 
