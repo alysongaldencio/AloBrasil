@@ -55,6 +55,9 @@ const Footer = () => {
           <p className="text-gray-400">
             © 2024 AloBrasil. Todos os direitos reservados.
           </p>
+          <p className="text-gray-400 text-sm mt-2">
+            ALO BRASIL ATIVIDADES DE MONITORAMENTO LTDA - CNPJ: 47.944.387/0001-06
+          </p>
         </div>
       </div>
     </footer>
